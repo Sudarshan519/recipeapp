@@ -1,3 +1,35 @@
+### Project Description
+
+- `main.dart` file has services initialization code and wraps the root `MyApp` with a `ProviderScope`
+- `main/app.dart` has the root `MaterialApp`.
+- `screens` screen conatins app pages.
+- The `widgets` folder contains code shared across features
+
+- `model` contains all the Data models needed in the application.
+ 
+
+### Run this project
+
+##### Clone this repository
+
+` git clone repourl`
+
+##### Go to the project directory
+
+` cd repo`
+
+##### Get all the packages
+
+`flutter pub get`
+
+##### Run the build runner command
+
+`flutter pub run build_runner build `
+
+##### Run the project
+
+`flutter run` or simply press ` F5 key` if you are using VSCode
+
 ###  Flutter starter app
 Initially flutter project looks like this.
 <div>
