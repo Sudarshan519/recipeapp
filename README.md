@@ -43,17 +43,15 @@ Recipe App Skeleton
 Recipe App Preview
 <div>
 <img src="Screenshot 2023-09-08 at 08-07-07 Flutter Apprentice (First Edition) Learn to Build Cross-Platform Apps.pdf.png"></div>
-# main.dart
+### main.dart
 ## Entry Point (main.dart)
-```dart
 
+``` dart
 void main() {
   runApp(
-  
     const MyApp());
 }
-
-
+```
 
 Generic Use of "Main App":
   In a broader context, "main app" could refer to the primary application or software that a developer is working on. It might encompass the core functionality    and features of the application.
@@ -76,7 +74,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-```
+dart
 
 # models.dart
 ```dart
@@ -113,6 +111,10 @@ var recipes = [
 ```
 Code for HomePage in Application 
 ```dart
+import 'package:flutter/material.dart';
+import 'package:recipeapp/models/recipe_model.dart';
+import 'package:recipeapp/screens/login.dart';
+import 'package:recipeapp/screens/widgets/recipe_widget.dart';
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -164,6 +166,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
 # Code for recipe widget 
 ```dart
+import 'package:flutter/material.dart';
+import 'package:recipeapp/models/recipe_model.dart';
+import 'package:recipeapp/screens/detail_page.dart';
+
 class RecipieWidget extends StatelessWidget {
   const RecipieWidget({
     super.key,
