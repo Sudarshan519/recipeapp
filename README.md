@@ -81,10 +81,13 @@ class _MyHomePageState extends State<MyHomePage> {
         itemCount: recipes.length,
         itemBuilder: (_,i)=>
              RecipieWidget(recipeModel:recipes[i]),
-        //      RecipieWidget(),
-        //      RecipieWidget(),
-        // ,
+      
       ),
+       /// or  you can do this
+       /// Column(
+       /// children:[
+       ///RecipieWidget(recipeModel:recipes[i])],
+       ///)
     );
   }
 }
@@ -110,14 +113,12 @@ final RecipeModel recipeModel;
         child: Column(children: [
           Image.network(
             recipeModel.imageUrl,
-            // "https://images.unsplash.com/photo-1624726175512-19b9baf9fbd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
             height: 300,
             width: 300,
             fit: BoxFit.cover,
           ),
           Text(
             recipeModel.label,
-            // "Tomato Soup",
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(
