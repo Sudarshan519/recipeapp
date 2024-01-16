@@ -1,6 +1,6 @@
 ### Project Description
 
-- `main.dart` file has services initialization code and wraps the root `MyApp` with a `ProviderScope`
+- `main.dart` file has services initialization code and wraps the root `MyApp` 
 - `main/app.dart` has the root `MaterialApp`.
 - `screens` screen conatins app pages.
 - The `widgets` folder contains code shared across features
