@@ -19,9 +19,6 @@ Recipe App Preview
 ```dart
 
 void main() {
-
-
-  ///
   runApp(
   
     const MyApp());
