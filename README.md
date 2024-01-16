@@ -21,10 +21,7 @@
 ##### Get all the packages
 
 `flutter pub get`
-
-##### Run the build runner command
-
-`flutter pub run build_runner build `
+ 
 
 ##### Run the project
 
