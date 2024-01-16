@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-Code in Application
+Code for HomePage in Application 
 ```dart
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -89,3 +89,44 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+Code for recipe widget 
+```dart
+class RecipieWidget extends StatelessWidget {
+  const RecipieWidget({
+    super.key,
+    required this.recipeModel,
+  });
+final RecipeModel recipeModel;
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: (){
+        /// print tapped
+        print("tapped");
+      },
+      child: Card(
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        child: Column(children: [
+          Image.network(
+            recipeModel.imageUrl,
+            // "https://images.unsplash.com/photo-1624726175512-19b9baf9fbd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+            height: 300,
+            width: 300,
+            fit: BoxFit.cover,
+          ),
+          Text(
+            recipeModel.label,
+            // "Tomato Soup",
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+        ]),
+      ),
+    );
+  }
+}
+```
+
