@@ -74,10 +74,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-dart
 
-# models.dart
-```dart
+
+//# models.dart
+
 class RecipeModel {
   String label;
   String imageUrl;

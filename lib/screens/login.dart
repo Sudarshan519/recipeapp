@@ -21,6 +21,7 @@ class LoginPage extends StatelessWidget {
                     if (value?.isEmpty == true) {
                       return "* Required";
                     }
+                    return null;
                   },
                   decoration: const InputDecoration(label: Text("Email")),
                 ),
@@ -29,6 +30,7 @@ class LoginPage extends StatelessWidget {
                     if (value?.isEmpty == true) {
                       return "* Required";
                     }
+                    return null;
                   },
                   decoration: const InputDecoration(label: Text("Password")),
                 ),
